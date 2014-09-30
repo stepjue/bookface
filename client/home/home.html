@@ -1,0 +1,11 @@
+<template name="home">
+   <div class="well well-large">
+      <label for="posttext">Update Status</label>
+      <input placeholder="What's on your mind?" type="text" name="posttext" id="posttext" class="form-control posttext" value="" required="required" pattern="" title="">
+   </div>
+   <ul id="postList" class="list-group">
+      {{#each posts}}
+         {{>post}}
+      {{/each}}
+   </ul>
+</template>
